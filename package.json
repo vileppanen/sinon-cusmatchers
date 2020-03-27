@@ -1,0 +1,35 @@
+{
+  "name": "sinon-cusmatchers",
+  "version": "0.0.1",
+  "description": "Custom matchers for Sinon",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vileppanen/sinon-cusmatchers.git"
+  },
+  "keywords": [
+    "sinon"
+  ],
+  "author": "Ville Leppänen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vileppanen/sinon-cusmatchers/issues"
+  },
+  "homepage": "https://github.com/vileppanen/sinon-cusmatchers#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1",
+    "rollup": "^2.2.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "sinon": "^9.0.1",
+    "sinon-chai": "^3.5.0"
+  },
+  "peerDependencies": {
+    "sinon": "^9.0.1"
+  }
+}
