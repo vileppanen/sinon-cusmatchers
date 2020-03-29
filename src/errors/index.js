@@ -1,12 +1,9 @@
-import sinon from 'sinon'
+const sinon = require('sinon')
 
 const matchError = message => {
-  if (message) {
-    return sinon.match.instanceOf(Error).and(sinon.match.has('message', message))
-  }
-  return sinon.match.instanceOf(Error)
+  return sinon.match.instanceOf(Error).and(sinon.match.has('message', message))
 }
 
-export default {
+module.exports = {
   matchError
 }

@@ -1,1 +1,2 @@
-export { default } from './errors'
+const errors = require('./errors')
+module.exports = errors

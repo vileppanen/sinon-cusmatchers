@@ -4,8 +4,11 @@
   "description": "Custom matchers for Sinon",
   "main": "dist/bundle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "prebuild": "npm run lint",
+    "pretest": "npm run build",
+    "test": "mocha --require test/setupTests.js test/**/*.test.js",
+    "lint": "standard"
   },
   "repository": {
     "type": "git",
@@ -27,7 +30,8 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "sinon": "^9.0.1",
-    "sinon-chai": "^3.5.0"
+    "sinon-chai": "^3.5.0",
+    "standard": "^14.3.3"
   },
   "peerDependencies": {
     "sinon": "^9.0.1"
