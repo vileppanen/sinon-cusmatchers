@@ -1,9 +1,14 @@
 {
   "name": "sinon-cusmatchers",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Custom matchers for Sinon",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/@vileppanen" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@vileppanen"
+  },
   "main": "dist/bundle.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rollup -c",
     "prebuild": "npm run lint",
@@ -38,6 +43,13 @@
     "sinon": "^9.0.1"
   },
   "standard": {
-    "globals": ["describe", "beforeEach", "sinon", "it", "expect"]
-  }
+    "globals": [
+      "describe",
+      "beforeEach",
+      "sinon",
+      "it",
+      "expect"
+    ]
+  },
+  "dependencies": {}
 }
