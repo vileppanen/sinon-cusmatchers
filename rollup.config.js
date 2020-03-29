@@ -1,8 +1,7 @@
-import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
+import resolve from 'rollup-plugin-node-resolve'
+import commonjs from 'rollup-plugin-commonjs'
 
-
-const extensions = ['.js'];
+const extensions = ['.js']
 export default {
   input: 'src/index.js',
   output: [
@@ -13,10 +12,10 @@ export default {
   ],
   plugins: [
     resolve({
-        mainFields: ['module', 'main'],
-        extensions
+      mainFields: ['module', 'main'],
+      extensions
     }),
     commonjs()
   ],
   external: ['sinon']
-};
+}

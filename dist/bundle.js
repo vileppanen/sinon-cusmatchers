@@ -1,17 +1,17 @@
-'use strict';
+'use strict'
 
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex.default : ex }
 
-var sinon = _interopDefault(require('sinon'));
+var sinon = _interopDefault(require('sinon'))
 
 const matchError = message => {
   return sinon.match.instanceOf(Error).and(sinon.match.has('message', message))
-};
+}
 
 var errors = {
   matchError
-};
+}
 
-var src = errors;
+var src = errors
 
-module.exports = src;
+module.exports = src

@@ -35,5 +35,8 @@
   },
   "peerDependencies": {
     "sinon": "^9.0.1"
+  },
+  "standard": {
+    "globals": ["describe", "beforeEach", "sinon", "it", "expect"]
   }
 }
